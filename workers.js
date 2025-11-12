@@ -5,21 +5,18 @@ addEventListener('fetch', event => {
 })
 
 async function handleRequest(event) {
-  const startTime = Date.now() // Début du calcul du temps
+  const startTime = Date.now()
   const url = new URL(event.request.url)
 
-  // Si on demande /robots.txt, on sert le fichier du répertoire /dist
+  // Interception de /robots.txt
   if (url.pathname === '/robots.txt') {
     try {
       const response = await getAssetFromKV(event, {
         mapRequestToAsset: req => new Request(`${new URL(req.url).origin}/robots.txt`)
       })
 
-      const endTime = Date.now()
-      const duration = endTime - startTime
-
-      // On lit le contenu original et on y ajoute le temps de traitement
       const originalText = await response.text()
+      const duration = Date.now() - startTime
       const responseText = `${originalText}\n# Processing time: ${duration} ms`
 
       return new Response(responseText, {
@@ -29,22 +26,19 @@ async function handleRequest(event) {
         }
       })
     } catch (err) {
-      const endTime = Date.now()
-      const duration = endTime - startTime
+      const duration = Date.now() - startTime
       return new Response(`robots.txt not found\n# Processing time: ${duration} ms`, { status: 404 })
     }
   }
 
-  // Pour tout le reste, laisser passer normalement
+  // Pour toutes les autres requêtes
   const fetchResponse = await fetch(event.request)
-  const endTime = Date.now()
-  const duration = endTime - startTime
-
-  // Optionnel : ajouter un header pour mesurer le temps sur les autres requêtes
+  const duration = Date.now() - startTime
   const newHeaders = new Headers(fetchResponse.headers)
-  newHeaders.set('X-Processing-Time-ms', duration)
+  newHeaders.set('X-Processing-Time-ms', duration.toString())
 
-  return new Response(fetchResponse.body, {
+  const body = await fetchResponse.arrayBuffer() // lecture sûre du body
+  return new Response(body, {
     status: fetchResponse.status,
     statusText: fetchResponse.statusText,
     headers: newHeaders
