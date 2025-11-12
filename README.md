@@ -1,1 +1,1 @@
-# patricia-spaans-sitemaps
+# patriciaspaans
