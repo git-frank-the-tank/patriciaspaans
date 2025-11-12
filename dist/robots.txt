@@ -7,7 +7,7 @@ Content-signal: search=yes,ai-train=yes
 Allow: /
 Disallow: /private/
 
-# Bloquer certains bots indésirables
+# Bloquer certains bots indesirables
 User-agent: Amazonbot
 Disallow: /
 
@@ -20,5 +20,5 @@ Disallow: /
 # Sitemap principal (Kajabi)
 Sitemap: https://www.patriciaspaans.com/sitemap.xml
 
-# Sitemap vidéos (GitHub)
+# Sitemap videos (GitHub)
 Sitemap: https://sitemaps.patriciaspaans.com/sitemap-video.xml
