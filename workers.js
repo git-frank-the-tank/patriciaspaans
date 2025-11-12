@@ -15,10 +15,14 @@ async function handleRequest(event) {
         mapRequestToAsset: req => new Request(`${new URL(req.url).origin}/robots.txt`)
       })
 
-      const endTime = Date.now() // Fin du calcul du temps
-      console.log(`Execution time for /robots.txt: ${endTime - startTime} ms`)
+      const endTime = Date.now()
+      const duration = endTime - startTime
 
-      return new Response(response.body, {
+      // On lit le contenu original et on y ajoute le temps de traitement
+      const originalText = await response.text()
+      const responseText = `${originalText}\n# Processing time: ${duration} ms`
+
+      return new Response(responseText, {
         headers: {
           'Content-Type': 'text/plain; charset=UTF-8',
           'Cache-Control': 'public, max-age=3600'
@@ -26,14 +30,23 @@ async function handleRequest(event) {
       })
     } catch (err) {
       const endTime = Date.now()
-      console.log(`Execution time for /robots.txt (error): ${endTime - startTime} ms`)
-      return new Response('robots.txt not found', { status: 404 })
+      const duration = endTime - startTime
+      return new Response(`robots.txt not found\n# Processing time: ${duration} ms`, { status: 404 })
     }
   }
 
   // Pour tout le reste, laisser passer normalement
   const fetchResponse = await fetch(event.request)
   const endTime = Date.now()
-  console.log(`Execution time for ${url.pathname}: ${endTime - startTime} ms`)
-  return fetchResponse
+  const duration = endTime - startTime
+
+  // Optionnel : ajouter un header pour mesurer le temps sur les autres requêtes
+  const newHeaders = new Headers(fetchResponse.headers)
+  newHeaders.set('X-Processing-Time-ms', duration)
+
+  return new Response(fetchResponse.body, {
+    status: fetchResponse.status,
+    statusText: fetchResponse.statusText,
+    headers: newHeaders
+  })
 }
