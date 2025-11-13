@@ -5,7 +5,7 @@
 User-Agent: *
 Content-signal: search=yes,ai-train=yes
 Allow: /
-Disallow: /private/
+Disallow: /prive/
 
 # Bloquer certains bots indesirables
 User-agent: Amazonbot
