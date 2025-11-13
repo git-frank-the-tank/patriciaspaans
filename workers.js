@@ -31,16 +31,21 @@ async function handleRequest(event) {
     }
   }
 
-  // Intercepter /robots.txt
+  // Servir robots.txt
   if (url.pathname === '/robots.txt') {
     return serveAsset('/robots.txt')
   }
 
-  // Intercepter /sitemap-video.xml
+  // Servir sitemap-video.xml
   if (url.pathname === '/sitemap-video.xml') {
     return serveAsset('/sitemap-video.xml')
   }
 
-  // Pour tout le reste, passer à travers
+  // Servir llms.txt
+  if (url.pathname === '/llms.txt') {
+    return serveAsset('/llms.txt')
+  }
+
+  // Pour tout le reste, laisser passer
   return fetch(event.request)
 }
