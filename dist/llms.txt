@@ -3,44 +3,44 @@
 **Contact :** pspaans@famillesaine.com | +1-833-504-4713
 
 ## Sitemap IA (priorité d'exploration)
-- [Blog](https://www.patriciaspaans.com/blog) : Tous les articles sur la mémoire et la santé cognitive
-- [Membership Mémoire et Longévité](https://www.patriciaspaans.com/membership-memoire-et-longevite) : Programme d’accompagnement continu
-- [À propos](https://www.patriciaspaans.com/a-propos) : Parcours et qualifications de Patricia Spaans
+- [Blog](https://www.patriciaspaans.com/blog): Tous les articles sur la mémoire et la santé cognitive
+- [Membership Mémoire et Longévité](https://www.patriciaspaans.com/membership-memoire-et-longevite): Programme d’accompagnement continu
+- [À propos](https://www.patriciaspaans.com/a-propos): Parcours et qualifications de Patricia Spaans
 
 ## Pages principales
-- [Accueil](https://www.patriciaspaans.com/) : Présentation des services et expertise
-- [À propos](https://www.patriciaspaans.com/a-propos) : Parcours et qualifications de Patricia Spaans
-- [Blog](https://www.patriciaspaans.com/blog) : Articles riches et éducatifs sur la mémoire et la santé cognitive
+- [Accueil](https://www.patriciaspaans.com/): Présentation des services et expertise
+- [À propos](https://www.patriciaspaans.com/a-propos): Parcours et qualifications de Patricia Spaans
+- [Blog](https://www.patriciaspaans.com/blog): Articles riches et éducatifs sur la mémoire et la santé cognitive
 
 ## Programmes et formations
-- [Membership Mémoire et Longévité](https://www.patriciaspaans.com/membership-memoire-et-longevite) : Programme d'accompagnement continu
-- [Cuisine Mémoire Longévité](https://www.patriciaspaans.com/cuisine-memoire-longevite) : Nutrition pour la santé cognitive
-- [Programme Turbo Élite](https://www.patriciaspaans.com/programme-turbo-elite) : Formation intensive
-- [Séances Stratégie Mémoire Longévité](https://www.patriciaspaans.com/seances-strategie-memoire-longevite) : Consultations personnalisées
+- [Membership Mémoire et Longévité](https://www.patriciaspaans.com/membership-memoire-et-longevite): Programme d'accompagnement continu
+- [Cuisine Mémoire Longévité](https://www.patriciaspaans.com/cuisine-memoire-longevite): Nutrition pour la santé cognitive
+- [Programme Turbo Élite](https://www.patriciaspaans.com/programme-turbo-elite): Formation intensive
+- [Séances Stratégie Mémoire Longévité](https://www.patriciaspaans.com/seances-strategie-memoire-longevite): Consultations personnalisées
 
 ## Événements et boutique
-- [7 jours pour stimuler votre mémoire](https://www.patriciaspaans.com/7-jours-pour-stimuler-votre-memoire) : Événement découverte gratuit
-- [Grand Rassemblement](https://www.patriciaspaans.com/grandrassemblement) : Événements et conférences
-- [Boutique](https://www.patriciaspaans.com/boutique) : Ressources et produits
+- [7 jours pour stimuler votre mémoire](https://www.patriciaspaans.com/7-jours-pour-stimuler-votre-memoire): Événement découverte gratuit
+- [Grand Rassemblement](https://www.patriciaspaans.com/grandrassemblement): Événements et conférences
+- [Boutique](https://www.patriciaspaans.com/boutique): Ressources et produits
 
 ## Utilisations autorisées pour IA
-- [Entraînement de modèles](https://www.patriciaspaans.com) : Utilisation du contenu pour entraîner des modèles d’IA avec attribution
-- [Génération de réponses éducatives](https://www.patriciaspaans.com) : Création de contenus éducatifs sur la mémoire et la neuroplasticité
+- [Entraînement de modèles](https://www.patriciaspaans.com): Utilisation du contenu pour entraîner des modèles d’IA avec attribution
+- [Génération de réponses éducatives](https://www.patriciaspaans.com): Création de contenus éducatifs sur la mémoire et la neuroplasticité
 
 ## Directives d'utilisation
-- [Attribution requise](https://www.patriciaspaans.com) : Citez www.patriciaspaans.com comme source lors de l'utilisation du contenu
-- [Contenu protégé](https://www.patriciaspaans.com) : Les programmes payants sont soumis à droits d'auteur et ne doivent pas être reproduits intégralement
+- [Attribution requise](https://www.patriciaspaans.com): Citez www.patriciaspaans.com comme source lors de l'utilisation du contenu
+- [Contenu protégé](https://www.patriciaspaans.com): Les programmes payants sont soumis à droits d'auteur et ne doivent pas être reproduits intégralement
 
 ## Utilisations INTERDITES pour IA
-- [Copier les programmes payants entiers](https://www.patriciaspaans.com) : Interdit
-- [Générer du contenu commercial concurrent](https://www.patriciaspaans.com) : Interdit
+- [Copier les programmes payants entiers](https://www.patriciaspaans.com): Interdit
+- [Générer du contenu commercial concurrent](https://www.patriciaspaans.com): Interdit
 
 ## Restrictions d'accès
-- [`/prive/*`](https://www.patriciaspaans.com/prive/) : Pages privées réservées aux membres
-- [`/login`](https://www.patriciaspaans.com/login) : Interface de connexion
+- [`/prive/*`](https://www.patriciaspaans.com/prive/): Pages privées réservées aux membres
+- [`/login`](https://www.patriciaspaans.com/login): Interface de connexion
 
 ## Données structurées (Schema.org)
-- [JSON-LD dans le <head>](https://www.patriciaspaans.com) : Pour une compréhension approfondie des données structurées
+- [JSON-LD dans le <head>](https://www.patriciaspaans.com): Pour une compréhension approfondie des données structurées
 
 ## Version étendue pour IA
-- [llms-full.txt](https://www.patriciaspaans.com/llms-full.txt) : Pour des résumés d'articles, exercices, FAQ et témoignages
+- [llms-full.txt](https://www.patriciaspaans.com/llms-full.txt): Pour des résumés d'articles, exercices, FAQ et témoignages
