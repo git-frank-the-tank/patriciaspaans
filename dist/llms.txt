@@ -10,4 +10,4 @@ Attribution: required
 Training: allowed
 Search: allowed
 
-Contact: info@patriciaspaans.com
+Contact: pspaans@famillesaine.com
